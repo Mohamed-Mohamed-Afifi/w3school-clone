@@ -1,0 +1,103 @@
+@import "vars","mixin";
+.Tutorial
+{
+    .vertical-menu
+    {
+        .active
+        {
+            background-color: $subcolor;
+        }
+        height: $menuheight;
+        overflow:auto;
+        a
+        {
+            text-decoration: none;
+            color:$whitecolor;
+            font-family: light_cairo;
+            &:hover
+            {
+                background-color: $subcolor;
+            }
+        }
+        .Tutorial-heading
+        {
+            color:$wheatcolor;
+        }
+    }
+    .css-looks
+    {
+        background-color: $wheatcolor;
+        .fig-caption
+        {
+            color:$pepsicolor;
+            font-size:$hugesize;
+        }
+    }
+}
+.intro
+{
+    
+    .card
+    {
+        background-color: $wheatcolor;
+        .card-img
+        {
+            width: 100px;
+            height: 120px;
+        }
+    }
+    .special-letter
+    {
+        color:$subcolor;
+        font-size:$normalsize;
+        font-weight: bold;
+    }
+    .card
+    {
+        .card-body
+        {
+            .fa{
+                color:$subcolor;
+            }
+            a
+            {
+                text-decoration: underline;
+                color: $subcolor;
+            }
+        }
+    }
+    .pagination
+    {
+        .page-link
+        {
+            border: 2px solid $subcolor;
+            background-color: $subcolor;
+            color:$whitecolor;
+            &:hover
+            {
+                background-color: $sublight;
+            }
+        }
+    }
+    .special-letter2
+    {
+        color:$lightwheat;
+        font-weight: bolder;
+    }
+}
+.collapsed-links{
+    background:$wheatcolor;
+    
+a{
+        color:$pepsicolor!important;
+        transition: all .15s 0s ease-in-out;
+        -webkit-transition: all .15s 0s ease-in-out;
+        -moz-transition: all .15s 0s ease-in-out;
+        -ms-transition: all .15s 0s ease-in-out;
+        -o-transition: all .15s 0s ease-in-out;
+        &:hover
+{
+            color:$whitecolor !important;
+        }
+    }
+}

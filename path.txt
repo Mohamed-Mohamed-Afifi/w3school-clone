@@ -1,0 +1,35 @@
+sass --watch "E:\my-project\html\Html roadmap\sass":"E:\my-project\html\Html roadmap\css"
+
+
+
+<article class="new-info py-5 px-3 my-5">
+                <h5 class="example-heading">visibility</h5>
+                <p class="new-info-sub-heading"><span class="special-letter">visibility:hidden</span><i class="fa fa-arrow-right mx-1" aria-hidden="true"></i>just hide element but not remove it from our page</p>
+                <a href="https://codepen.io/Mohamed_afifi/pen/qBRmwYy" class="btn try-code py-2 px-3 rounded-0" target="_blank" title="Try code">Try code</a>
+              </article>
+Ctrl + z ==>بيرجع اخر حاجه انت عملتها
+Alt + z==>بينزل الكود بدل ميكون في نفس السطر بينزله تحت
+Alt+shift+A==> بيعمل تعليق
+Alt + up/down ==>Move code to up or down
+Alt + shift +up/down==>dublicated
+
+[1] dell precision 7510 workstation ==>يشتغل اكتر من 14 ساعه ومش هتحس انه سخن اصلا بسبب التهويه الي فيه اكتر حاجه مميزه فيه
+[2] Ram 16 DDR4 
+[3] processor core i7 6920 HQ 2.9Hz ==> يعتبر اعلي نوع في الفئه ده الي موجود كله دلوقتي هتلاقيه سرعته اقل 
+[4]هاردين Hard disk  (1)128 G intel M.2 اسرع هارد موجود لحد دلوقتي اسرع من الssd
+                      (2)1TB
+[5]Nvidia Quadro M2000M 4G DDR5==>  الكارت متشارك مع الرامات بحيث انه بيقرأ علي الجهاز 12 جيجا يعني يشتغل معاك جرافيك عالي والعاب 2021
+[6]Full HD screen
+[7] الشاحن الاصلي 
+[8]تلاثة مداخل USB3 للنقل السريع
+[9] مدخل TypeC للشحن السريع للهواتف
+[10]Pes 19-Pes 20-Pes21-GTA5
+[11] اهم حاجه التبريد مروحتين اسمارت ومنافذ تهوية
+
+[1]dell core i7 g4MQ([جيل رابع])
+[2]Ram 16 
+[3]hard 128 ssd , hard 500 hdd
+[4]Nvidia Quadro k3100 4G او Nvidia Quadro k2000 2G
+ 
+
+

@@ -1,0 +1,88 @@
+.Tutorial .vertical-menu {
+  height: 100%;
+  overflow: auto;
+}
+
+.Tutorial .vertical-menu .active {
+  background-color: #0042a2;
+}
+
+.Tutorial .vertical-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: light_cairo;
+}
+
+.Tutorial .vertical-menu a:hover {
+  background-color: #0042a2;
+}
+
+.Tutorial .vertical-menu .Tutorial-heading {
+  color: #fef4e2;
+}
+
+.Tutorial .css-looks {
+  background-color: #fef4e2;
+}
+
+.Tutorial .css-looks .fig-caption {
+  color: #02102a;
+  font-size: 2rem;
+}
+
+.intro .card {
+  background-color: #fef4e2;
+}
+
+.intro .card .card-img {
+  width: 100px;
+  height: 120px;
+}
+
+.intro .special-letter {
+  color: #0042a2;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.intro .card .card-body .fa {
+  color: #0042a2;
+}
+
+.intro .card .card-body a {
+  text-decoration: underline;
+  color: #0042a2;
+}
+
+.intro .pagination .page-link {
+  border: 2px solid #0042a2;
+  background-color: #0042a2;
+  color: #fff;
+}
+
+.intro .pagination .page-link:hover {
+  background-color: #0042a2d6;
+}
+
+.intro .special-letter2 {
+  color: #d4d4b8;
+  font-weight: bolder;
+}
+
+.collapsed-links {
+  background: #fef4e2;
+}
+
+.collapsed-links a {
+  color: #02102a !important;
+  transition: all .15s 0s ease-in-out;
+  -webkit-transition: all .15s 0s ease-in-out;
+  -moz-transition: all .15s 0s ease-in-out;
+  -ms-transition: all .15s 0s ease-in-out;
+  -o-transition: all .15s 0s ease-in-out;
+}
+
+.collapsed-links a:hover {
+  color: #fff !important;
+}
+/*# sourceMappingURL=csspage.css.map */

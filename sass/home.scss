@@ -1,0 +1,290 @@
+@import "vars","mixin";
+@font-face{
+    font-family: light_cairo;
+    src: url(../fonts/Cairo-Regular.ttf)
+}
+.body-content
+{
+    background-color: $groubcolor;
+    .card
+    {
+        @include shdow;
+        .card-image
+        {
+            position: relative;
+            .overlayer
+            {
+                position: absolute;
+                top:0px;
+                left:0px;
+                width: 100%;
+                height: 100%;
+                z-index: $highlayer;
+                background-color: rgba($color: #000000, $alpha: .25);
+            }
+            .logo
+            {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: $toplayer;
+            }
+        }
+    }
+    .btn
+    {
+    cursor: pointer;
+    color:$blackcolor;
+    border: 2px solid $subcolor;
+    box-shadow: inset 0 0 0 0 $subcolor;
+    @include transitons;
+    font-size: $normalsize;
+    font-family: light_cairo;
+     &:hover
+     {
+        box-shadow: inset 400px 0 0 0 $subcolor;
+        @include transitons;
+     }
+    }
+}
+.banner
+{
+    position: relative;
+    .carousel-indicators
+    {
+        li
+        {
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: #ffe484;
+        }
+    }
+}
+
+.navbar
+{
+/*position: absolute;*/
+z-index: $highlayer;
+width: 100%;
+background-color:$pepsicolor;
+.nav-link
+{
+    font-family: light_cairo;
+    font-size: $normalsize;
+}
+    a
+    {  
+    color: $whitecolor !important;
+    }
+    .active
+    {
+            color: $whitecolor !important;
+            background-color: $subcolor!important;
+    }
+    .nav-item:hover
+    {
+        background-color: $subcolor!important;
+    }
+    .navbar-brand:hover
+    {
+        background-color: transparent!important;
+    }
+    .dropdown-menu 
+    {
+        a
+        {
+            color: $blackcolor!important;
+            &:hover
+            {
+                background-color: $subcolor;
+                color:$whitecolor;
+            }
+        }
+    }
+    .navbar-toggler
+    {
+        background-color: $lightwheat;
+        border: 1px solid  $lightwheat;
+    }
+        .nav-item
+        {
+            list-style-type: none;
+        }
+    
+    
+}
+.footer
+{
+    background-color: $pepsicolor;
+    a
+    {
+        color:$subcolor;
+    }
+    .footer-heading
+    {
+        color:$whitecolor;
+    }
+    .last-heading
+    {
+        color:$wheatcolor;
+    }
+    .list-group-item
+    {
+        background-color: $fulltrans;
+        border: none;
+        color:$subcolor;
+    }
+}
+.example-heading
+{
+    color:$pepsicolor
+}
+.try-code
+{
+    background-color: $subcolor;
+    color:$whitecolor;
+    &:hover
+    {
+        color:$whitecolor;
+        text-decoration: none;
+        background-color: $sublight;
+    }
+}
+.special-list
+{
+    list-style-type: none;
+}
+.or-heading{
+    position: relative;
+}
+
+.or-heading::after
+{
+    content: "";
+    position: absolute;
+    right: -59px;
+    top: 50%;
+    width: 3rem;
+    height: .2rem;
+    background-color: white;
+    margin-top: .2rem;
+}
+.or-heading::before
+{
+    content: "";
+    position: absolute;
+    left: -59px;
+    top: 50%;
+    width: 3rem;
+    height: .2rem;
+    background-color: white;
+    margin-top: .2rem;
+}
+.new-info
+{
+    background-color: $lightwheat;
+    position: relative;
+    &::before
+    {
+        content: "info";
+        background-color: $pepsicolor;
+        color:$goldcolor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: $normalsize;
+        padding:0 $normalsize;
+    }
+}
+.copy-box{
+    padding:$normalsize;
+    border:0px solid $goldcolor;
+    border-left-width: .2rem;
+    background-color:$transcolor;
+    cursor: copy;
+    position: relative;
+}
+.copy-box::after{
+    content: "copy";
+    color:$pepsicolor;
+    position: absolute;
+    top:$normalsize;
+    right:$normalsize;
+}
+.down-angle{
+    font-weight: bold;
+    font-size: $normalsize;
+}
+#toggle{
+    display:none;
+}
+label[for="toggle"]{
+    position: fixed;
+    top:0;
+    line-height: 2.8;
+    font-size: $mainsize;
+    cursor: pointer;
+    display: none;
+    .fa{
+        color:$whitecolor;
+    }
+    z-index:$toplayer ;
+}
+.side-links{
+    min-height: 100vh;
+}
+td{
+    font-size: .9rem!important;
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    :root{
+        font-size: 14px;
+    }
+    .vertical-menu a,td{
+        font-size: .5rem;
+    }
+    .side-links{
+        display: none!important;
+    }
+    label[for="toggle"]{
+        display: block!important;
+    }
+    input:checked+.side-links{
+        display: flex!important;
+    }
+    .page-link{
+        display: none;
+    }
+ }
+body[dir="rtl"]{
+    text-align: right;
+    direction: rtl;
+    .example-heading{
+        .fa{
+            transform:rotate(-180deg);
+            -webkit-transform:rotate(-180deg);
+            -moz-transform:rotate(-180deg);
+            -ms-transform:rotate(-180deg);
+            -o-transform:rotate(-180deg);
+}
+    }
+    .new-info
+{
+    background-color: $lightwheat;
+    position: relative;
+    &::before
+    {
+        content: "info";
+        background-color: $pepsicolor;
+        color:$goldcolor;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: $normalsize;
+        padding:0 $normalsize;
+        width: fit-content;
+    }
+}
+}
+ 
